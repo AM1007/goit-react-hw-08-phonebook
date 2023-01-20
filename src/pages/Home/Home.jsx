@@ -5,7 +5,7 @@ import css from './Home.module.css';
 const Home = () => {
   return (
     <main className={css.container}>
-      <p className={css.text}>Your contact book</p>
+      <p className={css.text}>contact book</p>
       <Outlet />
     </main>
   );

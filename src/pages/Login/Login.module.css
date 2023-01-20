@@ -21,7 +21,7 @@
   overflow: hidden;
   border: none;
   background: #03e9f4;
-  color: #050801;
+  color: #fff;
   box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4,
     0 0 200px #03e9f4;
   -webkit-box-reflect: below 1px linear-gradient(transparent, #0005);
@@ -75,7 +75,7 @@
   filter: hue-rotate(110deg);
 }
 .button {
-  /* background: #000; */
+  background: #000;
   min-width: 100px;
   text-decoration: none;
   position: relative;
