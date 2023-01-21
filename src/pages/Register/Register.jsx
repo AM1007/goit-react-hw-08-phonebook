@@ -11,7 +11,7 @@ const Register = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
-  const handleCange = ({ target: { name, value } }) => {
+  const handleChange = ({ target: { name, value } }) => {
     switch (name) {
       case 'name':
         return setName(value);
@@ -43,7 +43,7 @@ const Register = () => {
               type="text"
               name="name"
               required
-              onChange={handleCange}
+              onChange={handleChange}
             />
             <label>Name</label>
           </div>
@@ -55,7 +55,7 @@ const Register = () => {
               name="email"
               title="Name may contain only letters, apostrophe, dash and spaces. For example Adrian, Jacob Mercer, Charles de Batz de Castelmore d'Artagnan"
               required
-              onChange={handleCange}
+              onChange={handleChange}
             />
             <label>Mail</label>
           </div>
@@ -67,7 +67,7 @@ const Register = () => {
               name="password"
               title="Phone number must be digits and can contain spaces, dashes, parentheses and can start with +"
               required
-              onChange={handleCange}
+              onChange={handleChange}
             />
             <label>Password</label>
           </div>
