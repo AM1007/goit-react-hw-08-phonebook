@@ -6,15 +6,11 @@ import css from './UserMenu.module.css';
 
 export const UserMenu = () => {
   const dispatch = useDispatch();
-  const name = useSelector(authSelectors.getUserEmail);
+  const email = useSelector(authSelectors.getUserEmail);
   return (
     <div className={css.userlist}>
       <p className={css.text}>
-        <span className={css.name}>{name}</span>
-        <span></span>
-        <span></span>
-        <span></span>
-        <span></span>
+        <span className={css.name}>{email}</span>
       </p>
       <button className={css.button} onClick={() => dispatch(logOut())}>
         Log out
